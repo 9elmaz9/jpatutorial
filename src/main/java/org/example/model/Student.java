@@ -5,24 +5,24 @@ import javax.persistence.*;
 @Entity
 @Table(name = "student")
 public class Student {
-@Id
-@GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-@Column(name = "first_name", nullable = false,length = 150)
-    private String  firstName;
+    @Column(name = "first_name", nullable = false, length = 150)
+    private String firstName;
 
-    @Column(name = "last_name", nullable = false,length = 250)
-
+    @Column(name = "last_name", nullable = false, length = 250)
     private String lastName;
 
-    public Student() {
-    }
 
     public Student(Long id, String firstName, String lastName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    public Student() {
     }
 
     public Long getId() {

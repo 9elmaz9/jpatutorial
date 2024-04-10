@@ -16,12 +16,6 @@ public class CreateStudent {
        Student student=new Student();
        student.setFirstName("John");
        student.setLastName("Bell");
-   //   student.setId(Long.valueOf("1"));
-
- //  Student student1=new Student();
- //  student1.setFirstName("Bob");
- //  student1.setLastName("Rob");
- //   student1.setId(Long.valueOf("2"));
 
 
 
