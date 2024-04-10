@@ -3,7 +3,7 @@ package org.example;
 import org.example.model.Student;
 import org.example.model.StudentRepository;
 
-public class Main {
+public class App {
     public static void main(String[] args) {
         Student student =new Student();
         student.setFirstName("Alan");
@@ -25,5 +25,7 @@ public class Main {
 
         repository.delete(student);
         System.out.println("Deleted student " +student.toString());
+
+        repository.close();
     }
 }
