@@ -17,10 +17,10 @@ public class App {
         student=repository.find(student.getId());
         System.out.println("Found student " + student.toString());
 
-        student.setLastName("green");
+        student.setLastName("Green");
 
         repository.update(student);
-        System.out.println("Epdated student " + student.toString());
+        System.out.println("Updated student " + student.toString());
 
 
         repository.delete(student);
